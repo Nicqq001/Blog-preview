@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Figtree Local';
+  src: url('assets/fonts/Figtree-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree Local';
+  src: url('assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: hsl(47, 88%, 63%);
+    --card-color: hsl(0, 0%, 100%);
+    --font-color-gray-500: hsl(0, 0%, 42%);
+    --font-color-gray-900: hsl(0, 0%, 7%);
+}
+
+body{
+    font-family: 'Figtree Local', sans-serif;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration{
+    width: 100%;  
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.card{
+    background-color: var(--card-color);
+    max-width: 350px;
+    border: 1px solid var(--font-color-gray-900);
+    border-radius: 10px;
+    box-shadow: 8px 8px 0 0 rgba(0,0,0, 1);
+    padding: 24px;
+}
+
+.highlight{
+    font-weight: 800;
+    font-size: 14px;
+    background-color: var(--background-color);
+    width:min-content;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.date{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--font-color-gray-500);
+    margin-bottom: 12px;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--font-color-gray-900);
+    margin-bottom: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title:hover{
+    color: var(--background-color);
+}
+.comment{
+    color: var(--font-color-gray-500);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.attribution{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+@media (min-width: 1440px){
+    .card{
+        padding: 24px;
+    }
+    .title{
+        font-size: 24px;
+    }
+}
