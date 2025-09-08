@@ -87,6 +87,12 @@ body{
     display: flex;
     align-items: center;
     font-weight: 800;
+    cursor: pointer;
+}
+
+.name:hover{
+    color: red;
+    text-decoration: underline;
 }
 
 .profile{
@@ -106,7 +112,13 @@ body{
     margin-top: 20px;
 }
 
+.attribution a{
+    cursor: pointer;
+}
 
+.attribution a:hover{
+    color: var(--card-color)
+}
 
 @media (min-width: 1440px){
     .card{
